@@ -1,45 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mochileando</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Mochileando</title>
 </head>
-<body class="contenedor">
-    <header class="box1">
+
+<body>
+  <div class="container">
+    <div class="Header">
+      <div class="navbar">
         <div class="item1 topnav" id="myTopnav">
 
-            <a href="#home" class="active">
-              <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-              <lord-icon src="https://cdn.lordicon.com/hciqteio.json" trigger="loop-on-hover" delay="2000"
-                style="width:50px;height:50px;padding:0px;">
-              </lord-icon>
-            </a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="burguerMenu()">
-              <i class="fa fa-bars"></i>
-            </a>
+          <a href="#home" class="active">
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/vkweisbr.json" trigger="loop-on-hover" delay="2000"
+              colors="outline:#121331,primary:#646e78,secondary:#2ca58d,tertiary:#1d4e89"
+              style="width:50px;height:50px">
+            </lord-icon>
+          </a>
+          <a href="#news">Suscribete</a>
+          <a href="#contact">Logging</a>
+          <a href="#about">Acerca de nosotros</a>
+          <a href="javascript:void(0);" class="icon" onclick="burguerMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      <div class="Carrousel">
+        <!-- <img class="Carrousel" src="/assets/Green Yellow Modern Photography Traveling Youtube Thumbnail.png" alt=""> -->
+      </div>
+    </div>
+    <div class="Main">
+      <h2>NUESTROS DETINOS MÁS ELIGIDOS</h2>
+      <section class="articles">
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="/assets/locations-img/pumamarca.jpg" alt="Jujuy, Argentina" />
+            </figure>
+            <div class="article-body">
+              <h2>Jujuy, ARG</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
           </div>
-    </header>
-    <div class="boxcarrousell">
+        </article>
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="/assets/locations-img/roma.jpg" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>ROMA, ITALIA</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="/assets/locations-img/Curaçao.jpg" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>Curaçao</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <h2>NUESTRAS RECOMENDACIONES PARA TÍ</h2>
+      <section class="articles">
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="/assets/locations-img/miami.jpg" alt="Miami, Estados Unidos" />
+            </figure>
+            <div class="article-body">
+              <h2>Miami, EU</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="/assets/locations-img/cancun.jpg" alt="Cancun, MX" />
+            </figure>
+            <div class="article-body">
+              <h2>Cancun, MX</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="/assets/locations-img/barcelona.jpg" alt="Barcelona, España" />
+            </figure>
+            <div class="article-body">
+              <h2>Barcelona, ES</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="/assets/locations-img/estanbul.jpg" alt="Estanbul, TK" />
+            </figure>
+            <div class="article-body">
+              <h2>Estanbul, TK</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="/assets/locations-img/phi phi.jpg" alt="Islas Phi phi, TH" />
+            </figure>
+            <div class="article-body">
+              <h2>Islas Phi phi, TH</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="/assets/locations-img/Taj Mahal.jpg" alt="Taj Mahal, IN" />
+            </figure>
+            <div class="article-body">
+              <h2>Taj Mahal, IN</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
 
+      </section>
     </div>
-    <main class="box2">
-izquierda
-    </main>
-    <aside class="box3">
-    derecha
-    </aside>
-    <div class="box4">
-publicidad
+    <div class="Footer footer-content-wrapper">
+      <div class="left_f footer-col ta-l ">
+        <div class="footer-logo-container">
+          <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+          <lord-icon src="https://cdn.lordicon.com/vkweisbr.json" trigger="loop-on-hover" delay="2000"
+            colors="outline:#121331,primary:#646e78,secondary:#2ca58d,tertiary:#1d4e89" style="width:50px;height:50px">
+          </lord-icon>
+          <h3 class="text-mochileando">Mochileando</h3>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias ad rerum unde sequi pariatur maxime nemo distinctio tenetur facere harum deleniti molestiae odit suscipit aliquid quos, in doloremque consequuntur ullam.</p>
+        <p>© 1999-2023 Mochileando. All right reserved.</p>
+      </div>
+      <div class="center_f footer-col ta-l">
+        <h3>Siguenos en nuestras redes</h3>
+        <a href="#"><i class="fab fa-twitter"> Twitter</i></a>
+        <a href="#"><i class="fab fa-facebook"> Facebook</i></a>
+        <a href="#"><i class="fab fa-instagram"> Instagram</i></a>
+
+      </div>
+      <div class="rigth_f footer-col ta-l">
+        <h3>Column 3</h3>
+        <a href="#"><i class="fab fa-twitter"> Twitter</i></a>
+        <a href="#"><i class="fab fa-facebook"> Facebook</i></a>
+        <a href="#"><i class="fab fa-instagram"> Instagram</i></a>
+      </div>
     </div>
-<footer class="box5">
-    footer
-</footer>
-    <script src="/index.js"></script>
+  </div>
+  <script src="/index.js"></script>
 </body>
+
 </html>

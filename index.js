@@ -1,8 +1,8 @@
 function burguerMenu() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
+    var menuResponsive = document.getElementById("myTopnav");
+    if (menuResponsive.className === "topnav") {
+      menuResponsive.className += " responsive";
     } else {
-      x.className = "topnav";
+      menuResponsive.className = "topnav";
     }
   }
