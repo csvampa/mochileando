@@ -85,7 +85,7 @@ body{
     background-color: var(--var-color-primario);
     color: white;
   }
-  
+
   .left_f { grid-area: left_f;
     border-right: solid 1px #bbb;
     padding: 0.5em 0.1em 0.5em 1em;
@@ -100,9 +100,12 @@ body{
   
   .rigth_f { grid-area: rigth_f;
     padding: 0.5em 0.1em 0.5em 1em;
-    
-  }
+    }
  
+    .text-presentation{
+      margin: 2px;
+    }
+
   
   /* Add a black background color to the top navigation */
 .topnav {
@@ -158,7 +161,7 @@ body{
 .icons-styles{
   text-decoration: none;
   color: white;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   margin: 5px;
 }
 
@@ -194,7 +197,6 @@ article a::after {
   content: "";
 }
 
-/* basic article elements styling */
 article h2 {
   margin: 0 0 18px 0;
   font-size: 1.9rem;
@@ -252,11 +254,6 @@ article:has(:hover, :focus) {
 }
 
 
-/************************ 
-Generic layout (demo looks)
-**************************/
-
-*,
 *::before,
 *::after {
   box-sizing: border-box;
