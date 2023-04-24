@@ -100,6 +100,7 @@ body{
   
   .rigth_f { grid-area: rigth_f;
     padding: 0.5em 0.1em 0.5em 1em;
+    
   }
  
   
@@ -152,6 +153,22 @@ body{
 .footer-logo-container{
   display: flex;
   align-items: center;
+}
+
+.icons-styles{
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  margin: 5px;
+}
+
+.our-site{
+  text-decoration: none;
+  color: white;
+}
+
+.title-section{
+  margin-left: 4vw
 }
 
 /* Cards styles */
@@ -299,6 +316,7 @@ Generic layout (demo looks)
     height: 50px;
     background-color: var(--var-color-primario);
     background-image: none;
+    z-index: 1;
   }
 
   .Carrousel {
