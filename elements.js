@@ -28,7 +28,7 @@ const myCards1 = [{
         city: 'Jujuy',
         country: 'ARG',
         urlImg: '/assets/locations-img/pumamarca.jpg',
-        description: 'Ubicada al norte de Salta, se encuentra la Provincia de Jujuy. Esta región del país presenta montes, verdes planicies, ríos, lagunas de ensueño, con paisajes vistosos y climas agradables que hacen que el visitante pueda desarrollar actividades tales como trekking, turismo contemplativo, safaris fotográficos y turismo cultural.',
+        description: 'Ubicada al norte de Salta, se encuentra la Provincia de Jujuy. Esta región del país presenta montes, verdes planicies, ríos, lagunas de ensueño, con paisajes vistosos y climas agradables que hacen que el visitante pueda desarrollar actividades tales como trekking, turismo cultural y safaris fotográficos.',
     },
     {
         city: 'Roma',
@@ -40,7 +40,7 @@ const myCards1 = [{
         city: 'Curaçao',
         country: 'CW',
         urlImg: '/assets/locations-img/Curaçao.jpg',
-        description: 'Curaçao es una isla colonizada por los Países Bajos y uno de los maravillosos destinos del Caribe. El sitio está a solo 70 km de Venezuela y es parte del Reino de Holanda. El holandés es el idioma principal de la isla, pero aquí se habla inglés, español y principalmente papiamento.La capital italiana es un lugar con hermosos paisajes, pero aún más encantador por sus edificios, esculturas, pinturas, tesoros arqueológicos y las historias que cuentan. Es la única ciudad del mundo que tiene un país dentro de su territorio, que es el Vaticano.',
+        description: 'Curaçao es una isla colonizada por los Países Bajos y uno de los maravillosos destinos del Caribe. El sitio está a solo 70 km de Venezuela y es parte del Reino de Holanda. El holandés es el idioma principal de la isla, pero aquí se habla inglés, español y principalmente papiamento.',
     }
 ]
 const myCards2 = [{
@@ -82,11 +82,15 @@ const myCards2 = [{
 ]
 
 function loadCards(array,id) {
-    var section = document.getElementById(id);
+    const section = document.getElementById(id);
+    if (!section) {
+      throw new Error(`Element with id "${id}" not found`);
+    }
     section.innerHTML = '';
+    const fragment = document.createDocumentFragment();
     array.forEach((card) => {
-        section.innerHTML +=`
-    <article>
+       const article = document.createElement('article');
+    article.innerHTML = `
     <div class="article-wrapper">
       <figure>
         <img src=${card.urlImg} alt=${card.city}, ${card.country} />
@@ -106,9 +110,10 @@ function loadCards(array,id) {
         </a>
       </div>
     </div>
-  </article>`
-    })
-
+  `;
+  fragment.appendChild(article);
+});
+section.appendChild(fragment);
 }
 loadCards(myCards1,'id-section-elegidos');
 loadCards(myCards2,'id-section-recomendaciones');
