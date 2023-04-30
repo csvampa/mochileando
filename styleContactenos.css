@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Sofia+Sans+Condensed:ital,wght@0,400;0,500;1,400&display=swap');
+
+
+:root{
+    --var-color-primario:#1D4E89 ;
+    --var-color-secundario: #00b2ca2f;
+    --var-color-terciario: #3FC1C0 ;
+    --var-color-titulos: ;
+    --var-color-resaltado: ;
+    --var-color-tranparente: ;
+    --var-color-body: ;
+    font-family: 'Sofia Sans Condensed','roboto', sans-serif;
+}
+
+.contenedor {
+    height: 94vh;
+    display: grid;
+    gap: 20px;
+    background-color: lightgray;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    -webkit-text-size-adjust: 100%;
+    font-size:x-large;
+    grid-template-areas: 
+    'header header header header'
+    'titulo titulo titulo titulo'
+    'mapa   mapa    form    form'
+    'mapa   mapa    form    form'
+    'footer footer footer footer'
+
+    
+}
+
+.itemHeader {
+    background-color: rgb(0,0,255,0.5);
+    box-sizing: border-box;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: inherit;
+    grid-area: header;
+    
+}
+
+.itemTitulo {
+    text-align: center;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 2%;
+    grid-area: titulo;
+}
+
+.itemMapa {
+    box-sizing: content-box;
+    margin-left: 3%;
+    grid-area: mapa;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.itemForm {
+    width : 95%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    grid-area: form;
+}
+
+.formus {
+    margin-bottom: 2rem;
+    
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    line-height: 2;
+    font-size: 1.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    color: #fff;
+    background-color: rgb(0,0,255,0.5);
+    display: inline-block;
+    cursor: pointer;
+    height: 3rem;
+    box-sizing: content-box;
+    border: 0;
+}
+
+.btn:hover {
+    background-color: #0b5ed7;
+}
+
+.itemFoot {
+    background-color: rgb(0,0,255, 0.5);
+    padding: 3rem;
+    margin-top: 1%;
+    grid-area: footer;
+}
+
+    
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-areas: 
+        'header header header header'
+        'titulo titulo titulo titulo'
+        'mapa   mapa    mapa    mapa'
+        'mapa   mapa    mapa    mapa'
+        'form   form    form    form'
+        'form   form    form    form'
+        'footer footer footer footer'
+
+    }
+    .itemForm {
+        align-items: center;
+        margin: 8px 0px 0px;
+        padding: 0px 12px;
+    }
+    .itemMapa {
+        margin: 8px 0px 0px;
+        padding: 0px 14px;
+        height: 400px;
+    }
+
+    }
+
+
+
