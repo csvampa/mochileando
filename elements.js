@@ -1,9 +1,11 @@
 const footer = document.getElementById('div-footer').innerHTML = `<div class="left_f footer-col ta-l ">
   <div class="footer-logo-container">
-    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-    <lord-icon src="https://cdn.lordicon.com/vkweisbr.json" trigger="loop-on-hover" delay="2000"
-      colors="outline:#121331,primary:#646e78,secondary:#2ca58d,tertiary:#1d4e89" style="width:50px;height:50px">
-    </lord-icon>
+  <a href="/index.html" class="active">
+  <lord-icon src="https://cdn.lordicon.com/vkweisbr.json" trigger="loop-on-hover" delay="2000"
+    colors="outline:#121331,primary:#646e78,secondary:#2ca58d,tertiary:#1d4e89"
+    style="width:50px;height:50px">
+ </lord-icon>
+</a>
     <h3 class="text-mochileando">Mochileando</h3>
   </div>
   <p class="text-presentation">Somos la empresa de viajes líder en Latinoamérica que desde hace más de 4 años apuesta por el desarrollo tecnológico para revolucionar el mundo de las experiencias. </p>
@@ -121,7 +123,7 @@ function loadCards(array, id) {
         <p>
         ${card.description}
         </p>
-        <a href="#" class="read-more">
+        <a href="/pages/error_404.html" class="read-more">
           Descubra más 
           <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd"
