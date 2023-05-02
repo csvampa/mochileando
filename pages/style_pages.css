@@ -161,6 +161,12 @@ body{
   margin: 5px 0px;
 }
 
+.icon-error{
+  width:95vw;
+  min-height:69vh;
+  max-height:80vh;
+}
+
     @media screen and (max-width:760px){
       .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
