@@ -42,8 +42,8 @@ body{
   }
   
   .Main { grid-area: Main;
-          min-height: 62.5vh;
-          margin: 10px;
+          min-height: 55vh;
+          margin: 0px 0px;
   }
   
   .Footer {  display: grid;
@@ -148,6 +148,18 @@ body{
   margin-left: 4vw
 }
 
+.container-error{
+  display: flex;
+  flex-direction: column;
+}
+
+.item-center{
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px 0px;
+}
 
     @media screen and (max-width:760px){
       .topnav a:not(:first-child) {display: none;}
