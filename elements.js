@@ -9,7 +9,7 @@ const footer = document.getElementById('div-footer').innerHTML = `<div class="le
     <h3 class="text-mochileando">Mochileando</h3>
   </div>
   <p class="text-presentation">Somos la empresa de viajes líder en Latinoamérica que desde hace más de 4 años apuesta por el desarrollo tecnológico para revolucionar el mundo de las experiencias. </p>
-  <p>© 1999-2023 Mochileando. All right reserved.</p>
+  <p class='rights-text'>© 1999-2023 Mochileando. All right reserved.</p>
 </div>
 <div class="center_f footer-col ta-l">
   <h3>Siguenos en nuestras redes</h3>

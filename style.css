@@ -91,7 +91,7 @@ body{
     padding: 0.5em 0.1em 0.5em 1em;
     box-sizing: border-box;
   }
-  
+
   .center_f { grid-area: center_f;
     border-right: solid 1px #bbb;
     padding: 0.5em 0.1em 0.5em 1em;
@@ -269,7 +269,7 @@ article:has(:hover, :focus) {
 }
 
 
-    @media screen and (max-width:760px){
+    @media screen and (max-width:768px){
       .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -317,6 +317,10 @@ article:has(:hover, :focus) {
   }
 
   .Carrousel {
+    display: none;
+  }
+
+  .rights-text{
     display: none;
   }
 }
