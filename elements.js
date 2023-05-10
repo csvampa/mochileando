@@ -20,7 +20,7 @@ const footer = document.getElementById('div-footer').innerHTML = `<div class="le
 <div class="rigth_f footer-col ta-l">
   <h3>Mapa del sitio</h3>
   <a class="our-site" href="/index.html">Home</a>
-  <a class="our-site" href="/pages/suscribete.html">Suscribete</a>
+  <a class="our-site" href="/pages/login.html">Login</a>
   <a class="our-site" href="/pages/contacto.html">Contáctenos</a>
   <a class="our-site" href="/pages/acerca_de_nosotros.html">Acerca de nosotros</a>
 </div>`
@@ -35,7 +35,7 @@ let header = document.getElementById('div-header').innerHTML = `
         style="width:50px;height:50px">
      </lord-icon>
    </a>
-    <a href="/pages/suscribete.html">Suscribete</a>
+    <a href="/pages/login.html">Login</a>
     <a href="/pages/contacto.html">Contáctenos</a>
     <a href="/pages/acerca_de_nosotros.html">Acerca de nosotros</a>
     <a href="javascript:void(0);" class="icon" onclick="burguerMenu()">
