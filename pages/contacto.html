@@ -16,6 +16,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="img" href="/assets/logo_1.png">
   <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <title>Mochileando</title>
 </head>
 
@@ -26,40 +27,47 @@
     </div>
     <div class="Main">
 
-      <div class="itemTitulo"><h1>Cont&aacutectenos</h1></div>
-    <div class="itemMapa">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.842117313388!2d-58.41668508490065!3d-34.60815366523961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf4e0109a5f%3A0xd18825eb15a0a422!2sAv.%20D%C3%ADaz%20V%C3%A9lez%203400%2C%20C1198%20CABA!5e0!3m2!1ses-419!2sar!4v1680996060106!5m2!1ses-419!2sar"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapas"></iframe></div>
-    <form action="" method="get" class="itemForm">
+      <div class="itemTitulo">
+        <h1>Cont&aacutectenos</h1>
+      </div>
+      <div class="itemMapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.842117313388!2d-58.41668508490065!3d-34.60815366523961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf4e0109a5f%3A0xd18825eb15a0a422!2sAv.%20D%C3%ADaz%20V%C3%A9lez%203400%2C%20C1198%20CABA!5e0!3m2!1ses-419!2sar!4v1680996060106!5m2!1ses-419!2sar"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          id="mapas"></iframe>
+      </div>
+      <form action=""  class="itemForm">
         <div class="formus">
-            <label for="">Nombre</label>
-            <input id="fname" type="text" placeholder="Nombre"> 
+          <label for="">Nombre</label>
+          <input id="fname" type="text" placeholder="Nombre">
         </div>
         <div class="formus">
-            <label for="">Apellido</label>
-            <input id="fapell" type="text" placeholder="Apellido">
+          <label for="">Apellido</label>
+          <input id="fapell" type="text" placeholder="Apellido">
         </div>
         <div class="formus">
-            <label for="">Email</label>
-            <input id="fmail" type="text" required title="example@example.com" placeholder="name@email">
+          <label for="fmail">Email</label>
+          <input id="fmail"type='email' placeholder="name@email">
         </div>
         <div class="formus">
-            <label for="">Asunto</label>
-            <input id="fasunto" type="text" placeholder="Asunto">
+          <label for="">Asunto</label>
+          <input id="fasunto" type="text" placeholder="Asunto">
         </div>
         <div class="formus">
-            <label for="msg">Mensaje</label>
-            <textarea name="msg" rows="3" cols="20" placeholder="Envíenos sus comentarios"></textarea>
+          <label for="msg">Mensaje</label>
+          <textarea name="msg" id="fmsg" rows="3" cols="20" placeholder="Envíenos sus comentarios"></textarea>
         </div>
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Enviar
-          </button>
-    </form>
+        <button type="button" onclick="sendEmail()" class="btn">
+          Enviar
+        </button>
+      </form>
     </div>
     <div class="Footer footer-content-wrapper" id="div-footer">
     </div>
   </div>
   <script src="/elements.js"></script>
   <script src="/index.js"></script>
+  <script src="/pages/contact.js"></script>
 </body>
 
 </html>
