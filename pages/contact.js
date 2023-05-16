@@ -25,6 +25,4 @@ function sendEmail(){
     }).then(
       message => alert(message)
     );
-
-    console.log(Email.send)
 }
