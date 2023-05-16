@@ -42,7 +42,7 @@ body{
   }
   
   .Main { grid-area: Main;
-          min-height: 55vh;
+          min-height: 81vh;
           margin: 0px 0px;
   }
   

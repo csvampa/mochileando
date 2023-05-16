@@ -14,6 +14,7 @@ body {
     background-image: url(/assets/Banner_login.png);
     background-repeat: no-repeat;
    background-size: cover;
+   background-position: center;
    
 }
 
@@ -27,12 +28,17 @@ body {
 
 #central {
     max-width: 320px;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
+    max-height: 500px;
+    position: relative;
+    top: 5%;
+    left:5%
 }
 
 #login {
     width: 100%;
+    height: 100%;
     padding: 30px 50px;
     background-color: #ffffff4b;
 
@@ -66,8 +72,7 @@ h2 {
 
 .cuadro {
     width: 90%;
-    max-width: 330px;
-    padding: 15px;
+    padding: 15px 0;
     margin: auto;
 }
 
@@ -133,9 +138,8 @@ button[type="submit"]:hover {
 }
 
 .pie-form {
-    font-size: 90%;
     text-align: center;    
-    margin-top: 15px;
+    margin-top: 2vh;
 }
 
 .pie-form a {
@@ -148,3 +152,19 @@ button[type="submit"]:hover {
 .pie-form a:hover {
     color: #000000;
 }
+
+@media screen and (max-width:480px){
+.div-logo{
+    display: none
+}
+#central {
+    width: 80%;
+    height: 55%;
+    position: relative;
+    top: 22.5%;
+    left:10%;
+    margin:0;
+}
+
+}
+

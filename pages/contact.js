@@ -1,8 +1,8 @@
 function sendEmail(){
     var clientEmail = document.getElementById('fmail').value;
+    var clienName = document.getElementById('fname').value;
     var subject = document.querySelector('#fasunto').value;
     var body = document.querySelector('#fmsg').value;
-    console.log(clientEmail);
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "iroldan.br@gmail.com",
@@ -10,8 +10,21 @@ function sendEmail(){
         To : (clientEmail),
         From : "iroldan.br@gmail.com",
         Subject : (subject),
-        Body : (body),
+        Body : (`Hola ${clienName}
+        <br>
+        <br>
+        Muchas gracias por contactarte con nosotros, hemos recibido la siguiente consuta de tu parte:
+        <br>
+        ${body}
+        <br>
+        En los próximos 5 dias recibiras una respuesta de nuestros mochileros.
+        <br>
+        <br>
+        Estamos en contactacto
+        Support Mochileando`)
     }).then(
       message => alert(message)
     );
+
+    console.log(Email.send)
 }
