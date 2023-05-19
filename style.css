@@ -171,7 +171,9 @@ body{
 }
 
 .title-section{
-  margin-left: 4vw
+  text-align: center;
+  margin: 2%;
+  font-size: xx-large;
 }
 
 /* Cards styles */
