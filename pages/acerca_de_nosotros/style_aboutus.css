@@ -1,4 +1,3 @@
-
 .btn {
   display: inline-block;
   font-weight: 700;
@@ -24,7 +23,7 @@
 }
 
 .Main { grid-area: Main;
-  min-height: 75vh;
+  min-height: 77vh;
   margin: 0px 0px;
   display: flex;
   flex-direction: column;
@@ -62,10 +61,6 @@
   margin: 5px;
 }
 
-@media screen and (max-width:768px){
 .article-body p{
   margin: 0 30px;
-}
-
-
 }

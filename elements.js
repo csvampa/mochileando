@@ -19,10 +19,10 @@ const footer = document.getElementById('div-footer').innerHTML = `<div class="le
 </div>
 <div class="rigth_f footer-col ta-l">
   <h3>Mapa del sitio</h3>
-  <a class="our-site" href="/index.html">Home</a>
-  <a class="our-site" href="/pages/login.html">Login</a>
-  <a class="our-site" href="/pages/contacto.html">Contáctenos</a>
-  <a class="our-site" href="/pages/acerca_de_nosotros.html">Acerca de nosotros</a>
+  <a class="our-site" href="index.html">Home</a>
+  <a class="our-site" href="/pages/login/login.html">Login</a>
+  <a class="our-site" href="/pages/contacto/contacto.html">Contáctenos</a>
+  <a class="our-site" href="/pages/acerca_de_nosotros/acerca_de_nosotros.html">Acerca de nosotros</a>
 </div>`
 
 let header = document.getElementById('div-header').innerHTML = `
@@ -35,9 +35,9 @@ let header = document.getElementById('div-header').innerHTML = `
         style="width:50px;height:50px">
      </lord-icon>
    </a>
-    <a href="/pages/login.html">Login</a>
-    <a href="/pages/contacto.html">Contáctenos</a>
-    <a href="/pages/acerca_de_nosotros.html">Acerca de nosotros</a>
+    <a href="/pages/login/login.html">Login</a>
+    <a href="/pages/contacto/contacto.html">Contáctenos</a>
+    <a href="/pages/acerca_de_nosotros/acerca_de_nosotros.html">Acerca de nosotros</a>
     <a href="javascript:void(0);" class="icon" onclick="burguerMenu()">
     <i class="fa fa-bars"></i>
     </a>
@@ -123,7 +123,7 @@ function loadCards(array, id) {
         <p>
         ${card.description}
         </p>
-        <a href="/pages/error_404.html" class="read-more">
+        <a href="/pages/error_404/error_404.html" class="read-more">
           Descubra más 
           <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd"
