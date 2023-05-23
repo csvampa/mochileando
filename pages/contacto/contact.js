@@ -20,7 +20,8 @@ function sendEmail(){
         En los próximos 5 dias recibiras una respuesta de nuestros mochileros.
         <br>
         <br>
-        Estamos en contactacto
+        Estamos en contacto
+        <br>
         Support Mochileando`)
     }).then(
       message => alert(message)
