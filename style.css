@@ -107,13 +107,11 @@ body{
     }
 
   
-  /* Add a black background color to the top navigation */
 .topnav {
     /* background-color:var(--var-color-primario); */
     overflow: hidden;
     }
     
-    /* Style the links inside the navigation bar */
     .topnav a {
     float: left;
     display: block;
@@ -148,6 +146,25 @@ body{
   .ta-l {
     text-align: left;
   }
+
+  .weather-box{
+    float: right;
+color: #f2f2f2;
+    padding: 0px 16px;
+   max-height: 55px;
+  }
+
+  .text-weather{
+    font-size: medium;
+    float: left;
+    padding: 15px 5px;
+    height: 25px;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+
+  }
+  
   
   .footer-col a {
     display: block;

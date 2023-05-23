@@ -48,7 +48,6 @@ body{
     min-height: 94vh;
     display: grid;
     gap: 30px;
-    background-color: lightgray;
     box-sizing: border-box;
     /* -webkit-text-size-adjust: 100%; */
     font-size:x-large;

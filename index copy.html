@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="img" href="/assets/logo_1.png" />
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+    <title>Mochileando</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="Header" id="div-header">
+        <div class="navbar">
+          <div class="topnav" id="myTopnav">
+            <a href="/index.html" class="active">
+              <lord-icon
+                src="https://cdn.lordicon.com/vkweisbr.json"
+                trigger="loop-on-hover"
+                delay="2000"
+                colors="outline:#121331,primary:#646e78,secondary:#2ca58d,tertiary:#1d4e89"
+                style="width: 50px; height: 50px"
+              >
+              </lord-icon>
+            </a>
+            <a href="/pages/login/login.html">Login</a>
+            <a href="/pages/contacto/contacto.html">Contáctenos</a>
+            <a href="/pages/acerca_de_nosotros/acerca_de_nosotros.html"
+              >Acerca de nosotros</a
+            >
+            <a href="javascript:void(0);" class="icon" onclick="burguerMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <div class="weather-box" id="weather-container">
+              <div class="weather_1" id="weather-cont1">
+                <h2 id="location" class="text-weather">Panama</h2>
+                <img
+                  id="animated-icon"
+                  src="/assets/weather_icons/animated/cloudy-day-2.svg"
+                  alt=""
+                  height="auto"
+                  width="50px"
+                />
+                <h1 id="temp-value" class="text-weather"></h1>
+
+                <h1 id="temp-description" class="text-weather">Soleado</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Carrousel"></div>
+      </div>
+      <div class="Main">
+        <h2 class="title-section">NUESTROS DETINOS MÁS ELIGIDOS</h2>
+        <section class="articles" id="id-section-elegidos"></section>
+        <h2 class="title-section">NUESTRAS RECOMENDACIONES PARA TÍ</h2>
+        <section class="articles" id="id-section-recomendaciones"></section>
+      </div>
+      <div class="Footer footer-content-wrapper" id="div-footer"></div>
+    </div>
+    <script src="index.js"></script>
+    <script src="weatherAPI.js"></script>
+  </body>
+</html>

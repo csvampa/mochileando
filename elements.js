@@ -27,24 +27,43 @@ const footer = document.getElementById('div-footer').innerHTML = `<div class="le
 
 let header = document.getElementById('div-header').innerHTML = `
 <div class="navbar">
-  <div class=" topnav" id="myTopnav">
-
-    <a href="/index.html" class="active">
-      <lord-icon src="https://cdn.lordicon.com/vkweisbr.json" trigger="loop-on-hover" delay="2000"
-        colors="outline:#121331,primary:#646e78,secondary:#2ca58d,tertiary:#1d4e89"
-        style="width:50px;height:50px">
-     </lord-icon>
-   </a>
-    <a href="/pages/login/login.html">Login</a>
-    <a href="/pages/contacto/contacto.html">Contáctenos</a>
-    <a href="/pages/acerca_de_nosotros/acerca_de_nosotros.html">Acerca de nosotros</a>
-    <a href="javascript:void(0);" class="icon" onclick="burguerMenu()">
-    <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-<div class="Carrousel">
-</div>`;
+          <div class="topnav" id="myTopnav">
+            <a href="/index.html" class="active">
+              <lord-icon
+                src="https://cdn.lordicon.com/vkweisbr.json"
+                trigger="loop-on-hover"
+                delay="2000"
+                colors="outline:#121331,primary:#646e78,secondary:#2ca58d,tertiary:#1d4e89"
+                style="width: 50px; height: 50px"
+              >
+              </lord-icon>
+            </a>
+            <a href="/pages/login/login.html">Login</a>
+            <a href="/pages/contacto/contacto.html">Contáctenos</a>
+            <a href="/pages/acerca_de_nosotros/acerca_de_nosotros.html"
+              >Acerca de nosotros</a
+            >
+            <a href="javascript:void(0);" class="icon" onclick="burguerMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <div class="weather-box" id="weather-container">
+              <div class="weather_1" id="weather-cont1">
+                <h2 id="location" class="text-weather"></h2>
+                <img
+                  id="animated-icon"
+                  src=""
+                  alt=""
+                  height="auto"
+                  width="50px"
+                />
+                <h1 id="temp-value" class="text-weather"></h1>
+                <h1 id="temp-description" class="text-weather"></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Carrousel">
+        </div>`;
 
 
 const myCards1 = [{
@@ -138,5 +157,6 @@ function loadCards(array, id) {
   });
   section.appendChild(fragment);
 }
+
 loadCards(myCards1, 'id-section-elegidos');
 loadCards(myCards2, 'id-section-recomendaciones');
