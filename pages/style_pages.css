@@ -83,13 +83,11 @@ body{
     }
 
   
-  /* Add a black background color to the top navigation */
+
 .topnav {
-    /* background-color:var(--var-color-primario); */
     overflow: hidden;
     }
     
-    /* Style the links inside the navigation bar */
     .topnav a {
     float: left;
     display: block;
@@ -100,21 +98,19 @@ body{
     font-size: 17px;
     }
     
-    /* Change the color of links on hover */
+
     .topnav a:hover {
       background-color: var(--var-color-secundario);
     color: black;
     border-radius: 10px;
     }
     
-    /* Add an active class to highlight the current page */
+
     .topnav a.active {
-    /* background-color: var(--var-color-secundario); */
     color: white;
     padding:0;
     }
     
-    /* Hide the link that should open and close the topnav on small screens */
     .topnav .icon {
     display: none;
     }
@@ -135,7 +131,6 @@ body{
       justify-content: center;
   
     }
-  /* footer styles */
   
   .ta-l {
     text-align: left;

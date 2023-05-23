@@ -1,6 +1,5 @@
 let APIKey = 'ec1b3008222649cf3762bef876c6ada0';
 
-
 window.addEventListener('load',()=>{
    
     lat = '-34.56363'

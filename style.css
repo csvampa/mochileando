@@ -108,7 +108,6 @@ body{
 
   
 .topnav {
-    /* background-color:var(--var-color-primario); */
     overflow: hidden;
     }
     
@@ -122,21 +121,18 @@ body{
     font-size: 17px;
     }
     
-    /* Change the color of links on hover */
     .topnav a:hover {
       background-color: var(--var-color-secundario);
     color: black;
     border-radius: 10px;
     }
     
-    /* Add an active class to highlight the current page */
     .topnav a.active {
     /* background-color: var(--var-color-secundario); */
     color: white;
     padding:0;
     }
-    
-    /* Hide the link that should open and close the topnav on small screens */
+
     .topnav .icon {
     display: none;
     }
@@ -193,7 +189,6 @@ color: #f2f2f2;
   font-size: xx-large;
 }
 
-/* Cards styles */
 article {
   --img-scale: 1.001;
   --title-color: black;
