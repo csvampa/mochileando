@@ -72,8 +72,14 @@ fetch('https://iroldan.pythonanywhere.com/cards')
 .then(response => response.json())
 .then(data => 
   {
-    const myCards1 = [data[0],data[1],data[2]];
-    const myCards2 = [data[3],data[4],data[5],data[6],data[7],data[8]];
+    const myCards1 = [];
+    const myCards2 = [];
+    for (let i=0; i<=2;i++){
+      myCards1.push(data[i])
+    }
+    for (let i=3; i< data.length ;i++){
+      myCards2.push(data[i])
+    }
     console.log(myCards1)
     console.log(myCards2)
     function loadCards(array, id) {
