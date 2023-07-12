@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/pages/style_pages.css">
   <link rel="stylesheet" href="styleAdmin.css">
+  <link rel="stylesheet" href="/pages/style_pages.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,78 +14,85 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="icon" type="img" href="/assets/logo_1.png">
   <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
   <title>Mochileando</title>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-admin">
+
     <div class="Header" id="div-header">
     </div>
-    <div class="Main">
-        <div class="add_place">
-
-            <h1 class="title_admin">Agrega un nuevo destino</h1>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Agregar</button>
-        </div>
-        <div class="table">
-            <table>
-                <tr>
-                  <th>ID</th>
-                  <th>Ciudad</th>
-                  <th>País</th>
-                  <th>Foto</th>
-                  <th>Descripción</th>
-                </tr>
-                <tr>
-                  <td>Alfreds Futterkiste</td>
-                  <td>Maria Anders</td>
-                  <td>Germany</td>
-                  <td>Germany</td>
-                  <td>Germany</td>
-                </tr>
-                <tr>
-                  <td>Centro comercial Moctezuma</td>
-                  <td>Francisco Chang</td>
-                  <td>Mexico</td>
-                  <td>Mexico</td>
-                  <td>Mexico</td>
-                </tr>
-                <tr>
-                  <td>Ernst Handel</td>
-                  <td>Roland Mendel</td>
-                  <td>Austria</td>
-                  <td>Austria</td>
-                  <td>Austria</td>
-                </tr>
-                <tr>
-                  <td>Island Trading</td>
-                  <td>Helen Bennett</td>
-                  <td>UK</td>
-                  <td>UK</td>
-                  <td>UK</td>
-                </tr>
-                <tr>
-                  <td>Laughing Bacchus Winecellars</td>
-                  <td>Yoshi Tannamuri</td>
-                  <td>Canada</td>
-                  <td>Canada</td>
-                  <td>Canada</td>
-                </tr>
-                <tr>
-                  <td>Magazzini Alimentari Riuniti</td>
-                  <td>Giovanni Rovelli</td>
-                  <td>Italy</td>
-                  <td>Italy</td>
-                  <td>Italy</td>
-                </tr>
-              </table>
-        </div>
-    </div>
+   
+      <div class="Main container-xxl my-5">
+        <div id="app" class="">
+          <h1>Administración de Cards</h1>
+          <br>
+         
+          <a class="btn btn-primary animate__animated animate__heartBeat btn-animate" href="card-create.html">Nuevo</a>
+          <br><br>
+          <div v-if="error">
+              <p>Lo sentimos, ha ocurrido un error.</p>
+          </div>
+          <div v-else>
+              <section v-if="cargando">
+                  <div class="spinner-border"></div>
+                  <p>Cargando...</p>
+              </section>
+              <section v-else>
+                  <div class="table-responsive d-flex text-center">
+                      <table class="table table table-striped table-hover">
+                          <thead>
+                              <tr>
+                                  <th scope="col">Id</th>
+                                  <th scope="col">city</th>
+                                  <th scope="col">country</th>
+                                  <th scope="col">description</th>
+                                  <th scope="col">urlImg</th>
+                                  <th scope="col">Acciones</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <!-- Iterar sobre cada producto -->
+                              <tr class="" v-for="card in cards">
+                                  <td scope="row">{{card.id}}</td>
+                                  <td>{{card.city}}</td>
+                                  <td>{{card.country}}</td>
+                                  <td class="">{{card.description}}</td>
+                                  <td>
+                                      <img width="150" :src="card.urlImg" :alt="card.city">
+                                  </td>
+                                  <td class="d-flex justify-self-stretch flex-column justify-content-center">
+                                      <!-- Botón para editar el card -->
+                                      <button class="btn btn-sm btn-primary my-1 justify-content-center align-item-center"
+                                          :href="'card-update.html?id='+ card.id">Editar</a>
+                                      <!-- Botón para eliminar el card -->
+                                      <button type="button" class="btn btn-sm btn-danger my-1 justify-content-center align-item-center"
+                                          v-on:click="eliminar(card.id)">Eliminar</button>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </section>
+          </div>
+      </div>
+      </div>
+  
     <div class="Footer footer-content-wrapper" id="div-footer">
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+  crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Enlace de VUE-->
+<script src="/js/cards.js"></script>
   <script src="/index.js"></script>
   <script src="/elements.js"></script>
 </body>
