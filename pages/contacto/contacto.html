@@ -39,27 +39,28 @@
       <form action=""  class="itemForm">
         <div class="formus">
           <label for="">Nombre</label>
-          <input id="fname" type="text" placeholder="Nombre">
+          <input id="fname" type="text" placeholder="Nombre" v-model="nombre">
         </div>
         <div class="formus">
           <label for="">Apellido</label>
-          <input id="fapell" type="text" placeholder="Apellido">
+          <input id="fapell" type="text" placeholder="Apellido" v-model="apellido">
         </div>
         <div class="formus">
           <label for="fmail">Email</label>
-          <input id="fmail"type='email' placeholder="name@email">
+          <input id="fmail"type='email' placeholder="name@email" v-model="mail"> 
         </div>
         <div class="formus">
           <label for="">Asunto</label>
-          <input id="fasunto" type="text" placeholder="Asunto">
+          <input id="fasunto" type="text" placeholder="Asunto" v-model="asunto">
         </div>
         <div class="formus">
           <label for="msg">Mensaje</label>
-          <textarea name="msg" id="fmsg" rows="3" cols="20" placeholder="Envíenos sus comentarios"></textarea>
+          <textarea name="msg" id="fmsg" rows="3" cols="20" placeholder="Envíenos sus comentarios" v-model="mensaje"></textarea>
         </div>
-        <button type="button" onclick="sendEmail()" class="btn">
+        <button type="button" onclick="save_formulario()" class="btn">
           Enviar
         </button>
+        <a href="mensajes.html">Ver mensajes</a>
       </form>
     </div>
     <div class="Footer footer-content-wrapper" id="div-footer">
